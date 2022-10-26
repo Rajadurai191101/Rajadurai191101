@@ -1,0 +1,76 @@
+[
+    {
+        "id": "a97401b7973f70bb",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "04c280d7eacf943f",
+        "type": "mqtt in",
+        "z": "a97401b7973f70bb",
+        "name": "",
+        "topic": "gopal/ldr",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "90aa35d317ea51b1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 440,
+        "y": 120,
+        "wires": [
+            [
+                "c0e33dba4ec97f17"
+            ]
+        ]
+    },
+    {
+        "id": "c0e33dba4ec97f17",
+        "type": "debug",
+        "z": "a97401b7973f70bb",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "90aa35d317ea51b1",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "3",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]
